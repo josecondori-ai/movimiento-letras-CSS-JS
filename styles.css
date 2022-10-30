@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #607848;
+	
+	
+}
+h2{
+	font-size: 6em;
+	letter-spacing: 10px;
+	color: #F0F0D8;
+}
+
+.mensaje span{
+	display: inline-block;
+	position: relative;
+	animation: animacion 5s infinite;
+}
+.mensaje span:nth-child(4n){ animation-delay: 0s; }
+.mensaje span:nth-child(4n-1){ animation-delay: 2s; }
+.mensaje span:nth-child(4n-3){ animation-delay: 4s; }
+.mensaje span:nth-child(4n-2){ animation-delay: 6s; }
+
+
+@keyframes animacion {
+  0% { transform: rotate(0deg); }
+	25% { transform: rotate(-20deg); }
+	75% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
